@@ -97,12 +97,37 @@ Youtube貼り付けここまで -->
       </div>
       <!-- STAGE1　ここまで -->
       
+      <!-- STAGE1-1　ここから -->
+      <!---------------------------------------------------------------------
+        クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
+        v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
+      ----------------------------------------------------------------------->
+      <div v-if="next['stage1']" id="sectionStage1" class="stage">
+        <section>
+          <div class="section">
+            <div class="container">
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>謎を解け！</h2>
+          </div>
+          <div class="stage-column__container section bg-color--keycolor">
+            <div class="container">
+              <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+              <!-------------------------------------------------------------
+                class名"row"内のclass名"column"が横並びになります。
+                改行する場合は以下のように追加してください。
+                <div class="row">
+                  <div class="column">
+                    ～ 内容 ～
+                  </div>
+                </div>
+              ------------------------------------------------------------->
+              <div class="row">
+      
                 <div class="column">
                   <figure class="image__container">
                     <img src="assets/images/408A4517-ACA2-4E8D-A3D2-88872C18A0EB.jpeg" width="600">
                   </figure>
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q2']" v-on:answer-input="answerInput($event, 'stage2', 2)"></answer-input>
-                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                  <answer-input v-bind:correct="correctAnswer['stage1']['q2']" v-on:answer-input="answerInput($event, 'stage1', 2)"></answer-input>
+                  <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
                 　
                 </div>
       
