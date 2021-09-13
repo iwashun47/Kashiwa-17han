@@ -19,8 +19,8 @@ const app = Vue.createApp({
       correctAnswer: {
         stage1: {
           q1: 'エナジー',
-           //q2: 'ウイルス',
-           //q3: 'ヤサイ’,
+           q2: 'ウイルス',
+           q3: 'ヤサイ’,
            //q4: 'バイオ',
            //q5: 'データ'
         },
