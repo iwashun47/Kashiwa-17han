@@ -78,7 +78,7 @@ button {
   display: block;
   border: none;
   margin: 0 auto;
-  background-color: #006837;
+  background-color: #ccc;
   color: #fff;
   width: 287px;
   height: 55px;
@@ -147,7 +147,7 @@ button {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #ccc;
   margin-bottom: 20px;
   height: 100%;
 }
@@ -175,7 +175,7 @@ button {
   content: '';
   width: calc(100% - 60px);
   height: 7px;
-  background-color: #fcee21;
+  background-color: #ccc;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -198,7 +198,7 @@ button {
           transform: rotate(90deg);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  fill: #009245;
+  fill: #889;
   width: 12px;
   height: 24px;
 }
@@ -239,15 +239,15 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #ccc;
 }
 
 .bg-color--subcolor {
-  background-color: #d9e021;
+  background-color: #889;
 }
 
 .bg-color--gray {
-  background-color: #e6e6e6;
+  background-color: #ccc;
 }
 
 /*********************
@@ -284,15 +284,15 @@ button {
 }
 
 .section-title--keycolorlight {
-  background-color: #8cc63f;
+  background-color: #889;
 }
 
 .section-title--keycolorlight .section-title__stage {
-  color: #fff;
+  color: #889;
 }
 
 .section-title--keycolor {
-  background-color: #39b54a;
+  background-color: #889;
 }
 
 .section-title--story {
