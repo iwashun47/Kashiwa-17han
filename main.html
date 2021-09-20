@@ -74,6 +74,42 @@ Youtube貼り付けここまで -->
           </div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
+         </div><!-- /.column -->
+                <!-- STAGE1-1　ここまで -->
+
+
+                <div class="column">
+
+                  <figure class="image__container">
+                    <img src="assets/images/408A4517-ACA2-4E8D-A3D2-88872C18A0EB.jpeg" alt=""width="500" height="700">
+                  </figure>
+
+                  <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+                  <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
+                　
+                </div>
+
+                  
+<!-- STAGE1-3 を追加
+
+                <div class="column">
+
+                  <figure class="image__container">
+                    <img src="assets/images/stage.png" alt="">
+                  </figure>
+
+                  <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
+                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+
+                </div>
+
+1-3追加ここまで -->
+
+              </div><!-- /.row -->
+
+            </div>
+          </div>
+        </section>
 
         <!-- STAGE1クリア画面　ここから -->
         <!------------------------------------------------------------------------------------------------------
@@ -193,7 +229,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE2クリア画面　ここまで -->
       </div>
       <!-- STAGE2　ここまで -->
-      <!-- STAGE2　ここから -->
+      <!-- STAGE3　ここから -->
       <!---------------------------------------------------------------------
         クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
@@ -207,13 +243,13 @@ Youtube貼り付けここまで -->
                 だが、全てのセキュリティーを司る故、制御室の位置は最高機密であり、場所がわからない。<br>
                 救助隊が発見してくれたデータから、制御室を見つけ出せ！！</p>
             </div>
-             <!-- STAGE2-1　ここから -->
+             <!-- STAGE3-1　ここから -->
                 <div class="column">
-                  <!-- STAGE2-1問題セクション　ここから -->
+                  <!-- STAGE3-1問題セクション　ここから -->
                   <figure class="image__container">
                     <img src="assets/images/262C2BF7-249E-4B46-A69C-3E75C65B9D59.jpeg" alt="">
                   </figure>
-                  <!-- STAGE2-1問題セクション　ここまで -->
+                  <!-- STAGE3-1問題セクション　ここまで -->
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
@@ -230,14 +266,14 @@ Youtube貼り付けここまで -->
               <div class="row">
 
                
-                  <!-- STAGE2-1解答入力セクション　ここから -->
+                  <!-- STAGE3-1解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1)"></answer-input>
                   <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
-                  <!-- STAGE2-1解答入力セクション　ここまで -->
+                  <!-- STAGE3-1解答入力セクション　ここまで -->
                 </div><!-- /.column -->
-                <!-- STAGE2-1　ここまで -->
+                <!-- STAGE3-1　ここまで -->
 
-<!-- STAGE2-2 を追加
+<!-- STAGE3-2 を追加
                 <div class="column">
                   <figure class="image__container">
                     <img src="assets/images/stage.png" alt="">
@@ -246,9 +282,9 @@ Youtube貼り付けここまで -->
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
                 　
                 </div>
-2-2追加ここまで -->
+3-2追加ここまで -->
                   
-<!-- STAGE2-3 を追加
+<!-- STAGE3-3 を追加
                 <div class="column">
                   <figure class="image__container">
                     <img src="assets/images/stage.png" alt="">
@@ -256,7 +292,7 @@ Youtube貼り付けここまで -->
                   <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
                 </div>
-2-3追加ここまで -->
+3-3追加ここまで -->
 
               </div><!-- /.row -->
 
@@ -264,7 +300,7 @@ Youtube貼り付けここまで -->
           </div>
         </section>
 
-        <!-- STAGE2クリア画面　ここから -->
+        <!-- STAGE3クリア画面　ここから -->
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
@@ -277,12 +313,12 @@ Youtube貼り付けここまで -->
         </section>
         <!-- STAGE2クリア画面　ここまで -->
       </div>
-      <!-- STAGE2　ここまで -->
+      <!-- STAGE3　ここまで -->
 
-      <!-- STAGE3　ここから -->
+      <!-- STAGE4　ここから -->
       <div v-if="next['stage3']" id="sectionStage4" class="stage">
 
-        <!-- STAGE3-1問題セクション　ここから -->
+        <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：４</span>パスワード</h2>
@@ -295,9 +331,9 @@ Youtube貼り付けここまで -->
             </figure>
           </div>
         </section>
-        <!-- STAGE3-1問題セクション　ここまで -->
+        <!-- STAGE4-1問題セクション　ここまで -->
 
-        <!-- STAGE3-1解答入力セクションここから -->
+        <!-- STAGE4-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>キーワードを入力</h2>
@@ -310,9 +346,9 @@ Youtube貼り付けここまで -->
             <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
           </div>
         </section>
-        <!-- STAGE3-1解答入力セクション　ここまで -->
+        <!-- STAGE4-1解答入力セクション　ここまで -->
 
-<!-- STAGE3-2問題セクション を追加
+<!-- STAGE4-2問題セクション を追加
 
           <section class="section">
           <div class="container">
@@ -331,10 +367,10 @@ Youtube貼り付けここまで -->
           </div>
         </section>
       　　
-STAGE3-2追加ここまで -->
+STAGE4-2追加ここまで -->
 
           
-<!-- STAGE3-3問題セクション　を追加
+<!-- STAGE4-3問題セクション　を追加
         <section class="section">
           <div class="container">
 
@@ -353,7 +389,7 @@ STAGE3-2追加ここまで -->
           </div>
         </section>
 
-STAGE3-3追加　ここまで -->
+STAGE4-3追加　ここまで -->
 
           
       </div>
