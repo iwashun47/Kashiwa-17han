@@ -20,19 +20,19 @@ const app = Vue.createApp({
         stage1: {
           q1: 'エナジー',
            q2: 'ウイルス',
-           q3: 'ヤサイ’,
+           　q3: 'ヤサイ’,
            //q4: 'バイオ',
            //q5: 'データ'
         },
         stage2: {
-          q1: 'あああ',
-           //q2: 'えええ',
+          q1: 'バイオ',
+           q2: 'データ',
            //q3: 'おおお'
         },
         stage3: {
-          q1: 'いいい',
-           //q2: 'かかか',
-          // q3: 'ききき',
+          q1: 'ダイヤ',
+          　q2: 'ブンコ',
+           q3: 'ロッカー',
         },
             stage4: {
           q1: 'オープン',
@@ -40,7 +40,7 @@ const app = Vue.createApp({
           // q3: 'ききき',
         },
             stage5: {
-          q1: 'ダイヤ',
+          q1: 'サイエンス',
            //q2: 'かかか',
           // q3: 'ききき',
         }
@@ -57,13 +57,13 @@ const app = Vue.createApp({
         ],
         stage2: [
           false, // 2-1
-          // false, // 2-2
+           false, // 2-2
           // false, // 2-3
         ],
         stage3: [
           false, // 3-1
-          // false, // 3-2
-          // false, // 3-3
+           false, // 3-2
+           false, // 3-3
         ],
              stage4: [
           false, // 3-1
