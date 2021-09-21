@@ -20,7 +20,7 @@ const app = Vue.createApp({
         stage1: {
           q1: 'エナジー',
            q2: 'ウイルス',
-           //q3: 'ヤサイ’,
+           q3: 'ヤサイ’,
            //q4: 'バイオ',
            //q5: 'データ'
         },
@@ -30,7 +30,7 @@ const app = Vue.createApp({
            //q3: 'おおお'
         },
         stage3: {
-          q1: 'ヤサイ',
+          q1: 'いいい',
            //q2: 'かかか',
           // q3: 'ききき',
         },
@@ -53,7 +53,7 @@ const app = Vue.createApp({
         stage1: [
           false,// 1-1
            false, // 1-2
-          // false, // 1-3
+           false, // 1-3
         ],
         stage2: [
           false, // 2-1
